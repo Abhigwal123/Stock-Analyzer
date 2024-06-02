@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Stock Analyzer</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/css/neumorphism.css')}}">
+  <link rel="stylesheet" href="{{url_for('static',filename='assets/css/index.css')}}">
+  </head>
+
+<body>
+
+  <header class="navbar navbar-nav navbar-expand navbar-light navbar-theme-primary">
+    <div class="container-fluid px-3 px-md-4">
+
+
+      <!-- -----------------website name and icon-------------- -->
+
+      <div class="d-flex align-item pt-2 pb-2 pr-2s-center">
+        <a class="navbar-brand shadow-soft py-2 px-3 rounded border border-light mr-xl-4" href="#">
+
+          <span class="ml-2 text-dark" style="font-size: large;"><i class="fas fa-chart-pie"></i>&nbspStock Analyzer
+          </span>
+        </a>
+      </div>
+
+      <!-- ---------------------nav-bar-item pt-2 pb-2 pr-2s---------------------------- -->
+      <div class="d-flex align-item pt-2 pb-2 pr-2s-center">
+        <div class="d-none d-lg-block">
+          <a href="{{ url_for('first') }}" class="btn btn-primary text-dark mr-2 "><i
+              class="fas fa-user-secret"></i>&nbsp HOME</a>
+          <a href="{{ url_for('about_us') }}" class="btn btn-primary text-dark mr-2 active"><i
+              class="fas fa-info-circle"></i>&nbsp ABOUT</a>
+          <a href="{{ url_for('portfolio') }}" class="btn btn-primary text-dark mr-2"><i
+              class="fas fa-info-circle"></i>&nbsp PORTFOLIO</a>
+          <a href="{{ url_for('contact_us') }}" class="btn btn-primary text-dark mr-2"><i
+              class="fas fa-info-circle"></i>&nbsp CONTACT US</a>
+          <a href="{{ url_for('index') }}" class="btn btn-primary text-dark mr-2"><i
+              class="fas fa-info-circle"></i>&nbsp LOGIN</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- END Nav Bar -->
+  <section class="py-3 py-md-5 py-xl-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-8">
+          <h3 class="fs-5 mb-2 text-secondary text-uppercase">About</h3>
+          <h2 class="display-5 mb-4">
+            Welcome to our Stock Analyzer web app!
+          </h2>
+          <p>
+            We are dedicated to providing you with powerful tools to analyze
+            and predict stock market trends.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row gy-3 gy-md-4 gy-lg-0">
+        <div class="col-12 col-lg-6">
+          <div class="card bg-light p-3 m-0">
+            <div class="row gy-3 gy-md-0 align-items-md-center">
+              <div class="col-md-5">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                  type="module"></script>
+                <dotlottie-player src="https://lottie.host/acd2828a-e941-4e3b-8402-0369516cd5fd/Ao0FxYuBRV.json"
+                  background="transparent" speed="1" style="width: 200px; height: 300px" loop
+                  autoplay></dotlottie-player>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body p-0">
+                  <h2 class="card-title h4 mb-3">Stock Analysis</h2>
+                  <p class="card-text lead">
+                    Our stock analysis tool utilizes advanced algorithms and
+                    machine learning models to provide accurate predictions
+                    and insights into stock market movements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card bg-light p-3 m-0">
+            <div class="row gy-3 gy-md-0 align-items-md-center">
+              <div class="col-md-5">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                  type="module"></script>
+                <dotlottie-player src="https://lottie.host/36a9f4d5-0b36-421c-92a7-716575760eb1/ryoF42bVY1.json"
+                  background="transparent" speed="1" style="width: 300px; height: 300px" loop
+                  autoplay></dotlottie-player>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body p-0">
+                  <h2>Technology Used</h2>
+                  <p>
+                    Our Stock Analyzer is built using Flask, a lightweight
+                    WSGI web application framework, and TensorFlow, a powerful
+                    open-source machine learning library, to predict stock
+                    market movements.
+                  </p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row gy-3 gy-md-4 gy-lg-0">
+        <div class="col-12 col-lg-6">
+          <div class="card bg-light p-3 m-0">
+            <div class="row gy-3 gy-md-0 align-items-md-center">
+              <div class="col-md-5">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                  type="module"></script>
+
+                <dotlottie-player src="https://lottie.host/bb405289-4072-4117-84b5-8a92141905c7/nbC80Y01vb.json"
+                  background="transparent" speed="1" style="width: 250px; height: 300px;" loop
+                  autoplay></dotlottie-player>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body p-0">
+                  <h2 class="card-title h4 mb-3">Our Team</h2>
+                  <p class="card-text lead">This web app was created by Abhishek Yadav, a passionate developer with
+                    expertise in machine learning and web development.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card bg-light p-3 m-0">
+            <div class="row gy-3 gy-md-0 align-items-md-center">
+              <div class="col-md-5">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                  type="module"></script>
+
+                <dotlottie-player src="https://lottie.host/6fc8c526-c010-4e43-9ec7-3aa004ed4551/uWCy8RGpJF.json"
+                  background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                  autoplay></dotlottie-player>
+              </div>
+              <div class="col-md-7">
+                <div class="card-body p-0">
+                  <h2>Contact Us</h2>
+                  <p>If you have any questions or feedback, feel free to reach out to us at <a
+                      href="mailto:contact@example.com">contact@example.com</a>.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer Start  -->
+
+<div class="footer-section-area padding-top-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <p class="white">SA was started with a common goal of serving the finance community while they make transitions. All our team members bring to table their unique expertise and experience of stock market which they would like to pass on to future investors.</p>
+        
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="title">
+          <h3>Contact Us</h3>
+        </div>
+        <div class="popular-post">
+         <ul>
+          <li><a href="#"> <i class="fa fa-map-marker fa-2x"></i>
+SA, Office 206, Hubtown Solaris, Prof. NS Phadke Road,
+Churchgate (E) Mumbai, Maharashtra, India </a></li>
+          <li><a href="#"><i class="fa fa-envelope-o fa-2x"></i>info.bom@jks.com</a></li>
+          <li><a href="#"><i class="fa fa-phone fa-2x"></i>+91 98 19384052</a></li>
+        </ul>
+
+
+         
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="title">
+          <h3>Quick Links</h3>
+        </div>
+        <div class="information">
+          <ul>
+            <li><a href=""> <i class="fa fa-arrow-right"></i> HOME</a></li>
+            <li><a href=""> <i class="fa fa-arrow-right"></i> DASHBOARD</a></li>
+            <li><a href=""> <i class="fa fa-arrow-right"></i> ABOUT</a></li>
+            <li><a href=""> <i class="fa fa-arrow-right"></i> CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div class="title">
+          <h3>LOCATION</h3>
+        </div>
+        <div class="our-service">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60383.60024757153!2d72.8317!3d18.9325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x65cbb9c5d81e88aa!2sJKS%20Wealth%20Management%20Pvt.%20Ltd!5e0!3m2!1sen!2sus!4v1571992752493!5m2!1sen!2sus" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="false"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Footer --> 
+
+</body>
+
+</html>
